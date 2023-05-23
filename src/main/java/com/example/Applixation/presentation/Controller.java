@@ -60,7 +60,7 @@ public class Controller {
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
         Date date = new Date();
         client.setDateCreation(format.format(date));
-        //clientService.save(client);
+        clientService.save(client);
 
         return "redirect:/";
     }
